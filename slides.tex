@@ -5,7 +5,7 @@
 \usepackage{appendixnumberbeamer}
 
 \usepackage{datetime}
-\newdate{defensedate}{21}{01}{2018}
+\newdate{defensedate}{22}{01}{2018}
 
 \usepackage{minted}
 
@@ -171,9 +171,10 @@
 \begin{frame}{Evaluation Method}
   \begin{itemize}
     \item Experimental evaluation
-    \item Comparison with cache simulation
+    \item Comparison with (specially written) cache simulator
     \item Multiple programs used to evaluate every extension
     \item All loop permutations tested
+    \item Start with empty cache
   \end{itemize}
 \end{frame}
 
@@ -206,6 +207,7 @@
   \begin{itemize}[<+->]
     \item Assuming one memory access at a time and no distinction between reads and writes seems reasonable
     \item The evaluation convinced me even if I first expected a more formal approach
+    \item Code non-available
     \item Still computationally expensive
     \item I believe other policies than LRU could be implemented but the complexity would explode with an A-way set-associativity
     \item Same problem of complexity with more levels of hierarchy
